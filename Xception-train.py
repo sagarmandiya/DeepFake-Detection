@@ -43,7 +43,7 @@ train_datagen = ImageDataGenerator(rescale=1./255.)
 # Testing Data Generator.
 test_datagen = ImageDataGenerator(rescale=1./255.)
 
-# Flow training images in batches of 64 using train_datagen generator
+# Flow training images in batches of 32 using train_datagen generator
 train_generator = train_datagen.flow_from_directory(train_dir,
                                                     target_size=(128, 128),
                                                     batch_size=batch_size,
